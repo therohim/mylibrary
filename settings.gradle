@@ -1,0 +1,4 @@
+include ':exnavbar'
+include ':sweetdialog'
+include ':app'
+rootProject.name = "MyLibrary"
