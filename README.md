@@ -9,6 +9,6 @@
     }
     
     dependencies {
-            implementation 'com.github.nurrohim11:mylibrary:1.0.2'
+            implementation 'com.github.nurrohim11:mylibrary:1.0.3'
     }
 ###
