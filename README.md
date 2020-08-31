@@ -1,4 +1,4 @@
-# Sweet Dialog #
+# MyLibrary #
 
 ###
     allprojects {
