@@ -38,7 +38,7 @@ public class SweetDialog extends AlertDialog implements View.OnClickListener {
 
     private Drawable mCustomImgDrawable;
     private Button mConfirmButton, mCancelButton;
-    private Drawable mColor, mCancelColor;
+    public Drawable mColor, mCancelColor;
     private View mDialogView;//,mSuccessLeftMask,mSuccessRightMask;
     private View mCustomView;
     private FrameLayout mCustomViewContainer;
@@ -52,8 +52,8 @@ public class SweetDialog extends AlertDialog implements View.OnClickListener {
     //private SuccessTickView mSuccessTick;
 
     private final ProgressHelper mProgressHelper;
-    private SweetDialog.SweetClickListener mCancelClickListener;
-    private SweetDialog.SweetClickListener mConfirmClickListener;
+    public SweetDialog.SweetClickListener mCancelClickListener;
+    public SweetDialog.SweetClickListener mConfirmClickListener;
 
     private int mAlertType;
     public static final int NORMAL_TYPE = 0;
@@ -67,9 +67,13 @@ public class SweetDialog extends AlertDialog implements View.OnClickListener {
     public static final int CUSTOM_IMAGE_TYPE = 4;
     public static final int PROGRESS_TYPE = 5;
 
+    public static final int BLUE_TYPE = 1;
+    public static final int RED_TYPE = 2;
+    public static final int YELLOW_TYPE = 3;
+    public static final int GOLD_TYPE = 4;
+    public static final int GREEN_TYPE = 5;
 
     public static boolean DARK_STYLE = false;
-
 
     public interface SweetClickListener {
         void onClick(SweetDialog sweetDialog);
@@ -78,11 +82,9 @@ public class SweetDialog extends AlertDialog implements View.OnClickListener {
     public static final int INPUT_TYPE = 6;
     private EditText mEditText;
 
-
     public SweetDialog(Context context) {
         this(context, NORMAL_TYPE);
     }
-
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -111,15 +113,16 @@ public class SweetDialog extends AlertDialog implements View.OnClickListener {
         mConfirmButton.setOnClickListener(this);
         mCancelButton.setOnClickListener(this);
 
+        changeAlertType(mAlertType, true);
         setCustomView(mCustomView);
         setTitleText(mTitleText);
         setCloseDialog(mShowCloseButtonCLose);
         setContentText(mContentText);
         setCancelText(mCancelText);
         setConfirmText(mConfirmText);
-        setConfirmButtonColor(mColor);
-        setCancelButtonColor(mCancelColor);
-        changeAlertType(mAlertType, true);
+        setConfirmBackground(mColor);
+        setCancelBackground(mCancelColor);
+//        setConfirmBackground(GOLD_TYPE);
     }
 
     public SweetDialog(Context context, int alertType) {
@@ -177,7 +180,7 @@ public class SweetDialog extends AlertDialog implements View.OnClickListener {
         mProgressFrame.setVisibility(View.GONE);
         mConfirmButton.setVisibility(View.VISIBLE);
 
-        mConfirmButton.setBackgroundResource(R.drawable.button_background);
+        mConfirmButton.setBackgroundResource(R.drawable.button_blue_background);
         mErrorFrame.clearAnimation();
         mErrorX.clearAnimation();
         mSuccessTick.clearAnimation();
@@ -204,31 +207,31 @@ public class SweetDialog extends AlertDialog implements View.OnClickListener {
             switch (mAlertType) {
                 case ERROR_TYPE:
                     mErrorFrame.setVisibility(View.VISIBLE);
-                    setConfirmButtonColor(mColor);
+                    setConfirmBackground(mColor);
                     break;
                 case SUCCESS_TYPE:
                     mSuccessFrame.setVisibility(View.VISIBLE);
                     //mSuccessLeftMask.startAnimation(mSuccessLayoutAnimSet.getAnimations().get(0));
                     //mSuccessRightMask.startAnimation(mSuccessLayoutAnimSet.getAnimations().get(1));
-                    setConfirmButtonColor(mColor);
+                    setConfirmBackground(mColor);
                     break;
                 case WARNING_TYPE:
                     mWarningFrame.setVisibility(View.VISIBLE);
-                    setConfirmButtonColor(mColor);
+                    setConfirmBackground(mColor);
                     break;
                 case CUSTOM_IMAGE_TYPE:
                     setCustomImage(mCustomImgDrawable);
-                    setConfirmButtonColor(mColor);
+                    setConfirmBackground(mColor);
                     break;
                 case PROGRESS_TYPE:
                     mProgressFrame.setVisibility(View.VISIBLE);
                     mConfirmButton.setVisibility(View.GONE);
-                    setConfirmButtonColor(mColor);
+                    setConfirmBackground(mColor);
                     break;
                 case INPUT_TYPE:
                     mEditText.requestFocus();
                     //mEditTextFrame.setVisibility(View.VISIBLE);
-                    setConfirmButtonColor(mColor);
+                    setConfirmBackground(mColor);
                     break;
             }
             if (!fromCreate) {
@@ -251,6 +254,30 @@ public class SweetDialog extends AlertDialog implements View.OnClickListener {
         }
         return this;
     }
+
+//    public SweetDialog setConfirmBackground(int flag){
+//        switch (flag){
+//            case RED_TYPE:
+//                mConfirmButton.setBackgroundResource(R.drawable.button_red_background);
+//                break;
+//            case GOLD_TYPE:
+//                mConfirmButton.setBackgroundResource(R.drawable.button_gold_background);
+//                break;
+//            case BLUE_TYPE:
+//                mConfirmButton.setBackgroundResource(R.drawable.button_blue_background);
+//                break;
+//            case GREEN_TYPE:
+//                mConfirmButton.setBackgroundResource(R.drawable.button_green_background);
+//                break;
+//            case YELLOW_TYPE:
+//                mConfirmButton.setBackgroundResource(R.drawable.button_yellow_background);
+//                break;
+//            default:
+//                mConfirmButton.setBackgroundResource(R.drawable.button_gold_background);
+//                break;
+//        }
+//        return this;
+//    }
 
     private void showTitleText() {
         mShowTitleText = true;
@@ -358,8 +385,7 @@ public class SweetDialog extends AlertDialog implements View.OnClickListener {
         dismissWithAnimation(true);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
-    private SweetDialog setConfirmButtonColor (Drawable background){
+    public SweetDialog setConfirmBackground (Drawable background){
         mColor = background;
         if (mConfirmButton != null && mColor != null) {
             mConfirmButton.setBackground(mColor);
@@ -367,7 +393,7 @@ public class SweetDialog extends AlertDialog implements View.OnClickListener {
         return this;
     }
 
-    private SweetDialog setCancelButtonColor (Drawable background){
+    public SweetDialog setCancelBackground (Drawable background){
         mCancelColor = background;
         if (mCancelButton != null && mCancelColor != null) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
@@ -462,14 +488,14 @@ public class SweetDialog extends AlertDialog implements View.OnClickListener {
         return this;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
-    public SweetDialog confirmButtonColor (int color){
-        return setConfirmButtonColor(getContext().getResources().getDrawable(color));
-    }
-
-    public SweetDialog cancelButtonColor (int color){
-        return setCancelButtonColor(getContext().getResources().getDrawable(color));
-    }
+//    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+//    public SweetDialog confirmButtonColor (int color){
+//        return setConfirmBackground(getContext().getResources().getDrawable(color));
+//    }
+//
+//    public SweetDialog cancelButtonColor (int color){
+//        return setCancelButtonColor(getContext().getResources().getDrawable(color));
+//    }
 
     public SweetDialog setContentTextSize (int value){
         this.contentTextSize = value;

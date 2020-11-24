@@ -1308,7 +1308,11 @@ int drawable btn_radio_off_mtrl 0x0
 int drawable btn_radio_off_to_on_mtrl_animation 0x0
 int drawable btn_radio_on_mtrl 0x0
 int drawable btn_radio_on_to_off_mtrl_animation 0x0
-int drawable button_background 0x0
+int drawable button_blue_background 0x0
+int drawable button_gold_background 0x0
+int drawable button_green_background 0x0
+int drawable button_red_background 0x0
+int drawable button_yellow_background 0x0
 int drawable close_dialog 0x0
 int drawable dialog_background 0x0
 int drawable dialogdark 0x0
@@ -1945,6 +1949,7 @@ int style Widget_Compat_NotificationActionText 0x0
 int style alert_dialog_dark 0x0
 int style alert_dialog_light 0x0
 int style dialog_blue_button 0x0
+int style dialog_gold_button 0x0
 int[] styleable ActionBar { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
 int styleable ActionBar_background 0
 int styleable ActionBar_backgroundSplit 1

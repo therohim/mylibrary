@@ -1,39 +1,39 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml:1:1-3:12
-INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml:1:1-3:12
-INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml:1:1-3:12
-INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml:1:1-3:12
-INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml:1:1-3:12
-INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml:1:1-3:12
-INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml:1:1-3:12
+ADDED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml:1:1-3:12
 	package
-		ADDED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml:1:11-45
-		INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml
-		INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml
+		ADDED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml:1:11-45
+		INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml
+		INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml
-		ADDED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml:1:1-3:12
-		INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml
+		INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml
+		ADDED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml:1:1-3:12
+		INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml:1:1-3:12
+		ADDED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml:1:1-3:12
 	android:versionCode
-		INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml
-		ADDED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml:1:1-3:12
-		INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml
+		INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml
+		ADDED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml:1:1-3:12
+		INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml
 application
-ADDED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml:2:5-19
+ADDED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml:2:5-19
 uses-sdk
-INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml
-INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml
-INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml
-INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml
+INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml
+INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml
+INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml
+INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml
-		ADDED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml
-		INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml
+		INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml
+		ADDED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml
+		INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml
-		ADDED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml
-		INJECTED from /Users/macbookpro/Documents/projectandroid/MyLibrary/sweetdialog/src/main/AndroidManifest.xml
+		INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml
+		ADDED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml
+		INJECTED from /Users/macbookpro/Documents/projectandroid/mylibrary/sweetdialog/src/main/AndroidManifest.xml

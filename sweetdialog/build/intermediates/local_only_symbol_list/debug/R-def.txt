@@ -37,7 +37,11 @@ color warning_stroke_color
 dimen alert_width
 dimen common_circle_width
 dimen progress_circle_radius
-drawable button_background
+drawable button_blue_background
+drawable button_gold_background
+drawable button_green_background
+drawable button_red_background
+drawable button_yellow_background
 drawable close_dialog
 drawable dialog_background
 drawable dialogdark
@@ -81,4 +85,5 @@ string dialog_ok
 style alert_dialog_dark
 style alert_dialog_light
 style dialog_blue_button
+style dialog_gold_button
 styleable Rotate3dAnimation rollType fromDeg toDeg pivotX pivotY
