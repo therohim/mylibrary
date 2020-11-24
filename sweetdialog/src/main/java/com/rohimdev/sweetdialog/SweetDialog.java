@@ -1,6 +1,7 @@
 package com.rohimdev.sweetdialog;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
@@ -122,6 +123,8 @@ public class SweetDialog extends AlertDialog implements View.OnClickListener {
         setConfirmText(mConfirmText);
         setConfirmBackground(mColor);
         setCancelBackground(mCancelColor);
+        setConfirmColor("#000000");
+        setCancelColor("#ffffff");
 //        setConfirmBackground(GOLD_TYPE);
     }
 
@@ -393,11 +396,29 @@ public class SweetDialog extends AlertDialog implements View.OnClickListener {
         return this;
     }
 
+    public SweetDialog setConfirmColor(String warna){
+        if (mConfirmButton != null && mColor != null) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                mConfirmButton.setTextColor(Color.parseColor(warna));
+            }
+        }
+        return this;
+    }
+
     public SweetDialog setCancelBackground (Drawable background){
         mCancelColor = background;
         if (mCancelButton != null && mCancelColor != null) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
                 mCancelButton.setBackground(mCancelColor);
+            }
+        }
+        return this;
+    }
+
+    public SweetDialog setCancelColor(String color){
+        if (mCancelButton != null && mCancelColor != null) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                mCancelButton.setTextColor(Color.parseColor(color));
             }
         }
         return this;
