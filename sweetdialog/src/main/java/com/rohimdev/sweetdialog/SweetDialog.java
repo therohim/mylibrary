@@ -123,8 +123,6 @@ public class SweetDialog extends AlertDialog implements View.OnClickListener {
         setConfirmText(mConfirmText);
         setConfirmBackground(mColor);
         setCancelBackground(mCancelColor);
-        setConfirmColor("#000000");
-        setCancelColor("#ffffff");
 //        setConfirmBackground(GOLD_TYPE);
     }
 
